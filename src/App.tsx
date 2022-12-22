@@ -3,7 +3,6 @@ import {BrowserRouter, NavLink, Route} from "react-router-dom";
 import UserItemPage from "./components/UserItemPage";
 import UsersPage from "./components/UsersPage";
 import TodosPage from "./components/TodosPage";
-import TodoItemPage from "./components/TodoItemPage";
 
 const App = () => {
     return (
@@ -21,9 +20,6 @@ const App = () => {
                 </Route>
                 <Route path={'/users/:id'}>
                     <UserItemPage/>
-                </Route>
-                <Route path={'/todos/:id'}>
-                    <TodoItemPage/>
                 </Route>
             </div>
         </BrowserRouter>
